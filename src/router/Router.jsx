@@ -13,6 +13,7 @@ import AuthLayout from '../layout/AuthLayout';
 import LoginPage from '../pages/Login';
 import SignupPage from '../pages/SignUp';
 import ForgotPasswordPage from '../pages/ForgotPassword';
+import AboutUsPage from '../pages/AboutUs';
 
 // Router setup
 export const router = createBrowserRouter([
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      {
+        path: "/about-us",
+        element: <AboutUsPage/>
+      }
     ],
   },
   {
