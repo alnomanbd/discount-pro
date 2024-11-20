@@ -1,0 +1,1309 @@
+[
+  {
+    "_id": "1a2b3c4d5e6f7g8h9i0j",
+    "brand_name": "Daraz Bangladesh",
+    "rating": 4.7,
+    "description": "The largest online shopping platform in Bangladesh offering everything from electronics to fashion.",
+    "brand_logo": "https://basis.org.bd/public/images/logo/3847d1361a24da5406507aa96b7b194e23012022014400.png",
+    "coupons": [
+      {
+        "coupon_code": "DARAZ10",
+        "description": "Get 10% off on your first purchase.",
+        "expiry_date": "2024-12-31",
+        "condition": "New customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "DARAZ500",
+        "description": "Save up to BDT 500 on electronics.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "DARAZFREE",
+        "description": "Free delivery on orders above BDT 1000.",
+        "expiry_date": "2024-11-25",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_link": "https://www.daraz.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2h3j4k5l6m7n8o9p0q1r",
+    "brand_name": "Ajkerdeal",
+    "rating": 4.3,
+    "description": "A leading Bangladeshi online marketplace for electronics, fashion, and daily essentials.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZU-xt1dmFN4g5LvgmBtkt3SpZmMjhFPSOsA&s",
+    "coupons": [
+      {
+        "coupon_code": "AJKER15",
+        "description": "Get 15% off on all fashion items.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "AJKER200",
+        "description": "BDT 200 off on home appliances.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.ajkerdeal.com",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "3s4t5u6v7w8x9y0z1a2b",
+    "brand_name": "Pickaboo",
+    "rating": 4.6,
+    "description": "Online store offering a wide range of smartphones, gadgets, and accessories.",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Pickaboo.png",
+    "coupons": [
+      {
+        "coupon_code": "PICKABOO5",
+        "description": "5% off on all smartphones.",
+        "expiry_date": "2024-11-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PICKABOO100",
+        "description": "Save BDT 1000 on purchases above BDT 5000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.pickaboo.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "4c5d6e7f8g9h0i1j2k3l",
+    "brand_name": "Chaldal",
+    "rating": 4.8,
+    "description": "Online grocery store in Bangladesh, delivering fresh groceries right to your doorstep.",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/en/d/de/Chaldal.com_logo.png",
+    "coupons": [
+      {
+        "coupon_code": "CHALDAL10",
+        "description": "10% off on your first grocery order.",
+        "expiry_date": "2024-12-15",
+        "condition": "First-time users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "CHALDAL100",
+        "description": "Save BDT 100 on orders above BDT 1000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum order of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.chaldal.com",
+    "category": "Grocery",
+    "isSaleOn": false
+  },
+  {
+    "_id": "5m6n7o8p9q0r1s2t3u4v",
+    "brand_name": "GonoBazar",
+    "rating": 4.1,
+    "description": "Bangladesh’s online marketplace for affordable electronics, fashion, and household items.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwd0H7csUgrWnqUmXaRkxSoToGOIfz35FIfg&s",
+    "coupons": [
+      {
+        "coupon_code": "GONOB10",
+        "description": "10% off on your first purchase.",
+        "expiry_date": "2024-12-01",
+        "condition": "For new customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GONOB500",
+        "description": "Save BDT 500 on orders above BDT 4000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 4000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.gonobazar.com",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "6v7w8x9y0z1a2b3c4d5e",
+    "brand_name": "Robi Shop",
+    "rating": 4.4,
+    "description": "Official online store of Robi, one of the leading telecom operators in Bangladesh.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVp1NC8PVb9Hu7kxq7TvHF7wkMs0eap4pWQ&s",
+    "coupons": [
+      {
+        "coupon_code": "ROBI50",
+        "description": "Get BDT 50 off on new SIM purchases.",
+        "expiry_date": "2024-12-31",
+        "condition": "For new users only.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "ROBI300",
+        "description": "Save BDT 300 on your first recharge above BDT 500.",
+        "expiry_date": "2024-11-25",
+        "condition": "For first-time recharge only.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.robishop.com.bd",
+    "category": "Telecom",
+    "isSaleOn": true
+  },
+  {
+    "_id": "7t8u9v0w1x2y3z4a5b6c",
+    "brand_name": "Bikroy",
+    "rating": 4.2,
+    "description": "The largest online marketplace for buying and selling new and used items in Bangladesh.",
+    "brand_logo": "https://softexpo.com.bd/assets/media/exhibitor_logo/1663063817.png",
+    "coupons": [
+      {
+        "coupon_code": "BIKROY50",
+        "description": "Get BDT 50 off when you buy any item.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "BIKROYSALE",
+        "description": "Special sale: Save up to 30% on selected products.",
+        "expiry_date": "2024-11-25",
+        "condition": "Discount varies by product.",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_link": "https://www.bikroy.com",
+    "category": "Marketplace",
+    "isSaleOn": true
+  },
+  {
+    "_id": "8w9x0y1z2a3b4c5d6e7f",
+    "brand_name": "Othoba",
+    "rating": 4.5,
+    "description": "An online store offering a wide range of products, including fashion, electronics, and groceries.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsdpflewl-QIjkIjZVDkGZgZYFO1Kohglew&s",
+    "coupons": [
+      {
+        "coupon_code": "OTHOBA100",
+        "description": "Save BDT 100 on your first order above BDT 1500.",
+        "expiry_date": "2024-12-10",
+        "condition": "Minimum order of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "OTHOBA20",
+        "description": "Get 20% off on fashion items.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_link": "https://www.othoba.com",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "9z0a1b2c3d4e5f6g7h8i",
+    "brand_name": "Shadmart",
+    "rating": 3.9,
+    "description": "A popular Bangladeshi online store for daily needs, from groceries to electronics.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGJo5euLbE7YXykPtyxjW9fgOhnHUwKRCVg&s",
+    "coupons": [
+      {
+        "coupon_code": "SHAD10",
+        "description": "Save 10% on groceries.",
+        "expiry_date": "2024-11-15",
+        "condition": "Minimum purchase of BDT 500 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SHAD200",
+        "description": "Get BDT 200 off on electronics over BDT 2000.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of BDT 2000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.shadmart.com",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "10u11v12w13x14y15z16",
+    "brand_name": "Bashundhara Shop",
+    "rating": 4.0,
+    "description": "Official online store of Bashundhara Group, offering home essentials, electronics, and more.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9uA8xQ37bL1eRHrc4ZSzCrPP-4nGfeZVtRw&s",
+    "coupons": [
+      {
+        "coupon_code": "BASHA10",
+        "description": "Get 10% off on home products.",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of BDT 1000 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BASHA500",
+        "description": "Save BDT 500 on electronics.",
+        "expiry_date": "2024-12-25",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.bashundharashop.com",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "11x12y13z14a15b16c17",
+    "brand_name": "Maya",
+    "rating": 4.5,
+    "description": "Online store offering a variety of beauty, health, and lifestyle products.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Q6Fz9QK7X5NDhxra8UAoEa4DsyKJDTGTFg&s",
+    "coupons": [
+      {
+        "coupon_code": "MAYA10",
+        "description": "10% off on beauty products.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MAYA500",
+        "description": "Save BDT 500 on your first order over BDT 2000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 2000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.maya.com.bd",
+    "category": "Beauty & Lifestyle",
+    "isSaleOn": false
+  },
+  {
+    "_id": "12a13b14c15d16e17f18",
+    "brand_name": "PriyoShop",
+    "rating": 4.6,
+    "description": "An online shopping mall with a wide range of products, including electronics, home appliances, and fashion.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodOd-IzxQIn42Rv5hHSo_bVDS13CapoyWg&s",
+    "coupons": [
+      {
+        "coupon_code": "PRIYO15",
+        "description": "Get 15% off on electronics.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PRIYO1000",
+        "description": "BDT 1000 off on purchases above BDT 7000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 7000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.priyoshop.com",
+    "category": "E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "13g14h15i16j17k18l19",
+    "brand_name": "Eskayef Pharmacy",
+    "rating": 4.7,
+    "description": "Online pharmacy offering prescription and over-the-counter medicines, health products, and wellness items.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPXEXvTrJWUyh0p3tCL5dy_m2Aa7SZZptBSQ&s",
+    "coupons": [
+      {
+        "coupon_code": "ESKAYEF15",
+        "description": "Get 15% off on your first medicine order.",
+        "expiry_date": "2024-12-10",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "ESKAYEF200",
+        "description": "Save BDT 200 on orders over BDT 2000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 2000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.eskayef.com.bd",
+    "category": "Health & Pharmacy",
+    "isSaleOn": false
+  },
+  {
+    "_id": "14m15n16o17p18q19r20",
+    "brand_name": "Foodpanda",
+    "rating": 4.8,
+    "description": "The go-to platform for ordering food from local restaurants and having it delivered to your doorstep.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7ZLSbbZ-5ClyEWOeaKJU40oxUHQj-Iig_Q&s",
+    "coupons": [
+      {
+        "coupon_code": "FOODPANDA100",
+        "description": "Save BDT 100 on your first order above BDT 500.",
+        "expiry_date": "2024-12-31",
+        "condition": "For new users only.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "FOODPANDA10",
+        "description": "Get 10% off on your next food delivery.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of BDT 300 required.",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_link": "https://www.foodpanda.com.bd",
+    "category": "Food Delivery",
+    "isSaleOn": true
+  },
+  {
+    "_id": "15s16t17u18v19w20x21",
+    "brand_name": "Chowdhury Group",
+    "rating": 4.3,
+    "description": "A large e-commerce platform offering home appliances, electronics, and fashion products.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOhLwCy8cetqFXnfJyKUYV7s_i_kXBRL37Q&s",
+    "coupons": [
+      {
+        "coupon_code": "CHOWDHURY10",
+        "description": "Save 10% on home appliances.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum order of BDT 2000 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "CHOWDHURY500",
+        "description": "BDT 500 off on electronics over BDT 3000.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.chowdhurygroup.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "16y17z18a19b20c21d22",
+    "brand_name": "TechLand Bangladesh",
+    "rating": 4.9,
+    "description": "Your go-to destination for electronics, gadgets, and accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReN4C3XSq4Ect-TmnzoSXObf0DU87HYs_p8Q&s",
+    "coupons": [
+      {
+        "coupon_code": "TECH5",
+        "description": "5% off on all electronics.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "TECH1000",
+        "description": "Save BDT 1000 on orders above BDT 5000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.techland.com.bd",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "17a18b19c20d21e22f23",
+    "brand_name": "Shwapno",
+    "rating": 4.6,
+    "description": "Leading supermarket chain offering groceries and household products online.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH4hNgQQA7kTobqtWw6yAEbe-xBcdyhE7Rw&s",
+    "coupons": [
+      {
+        "coupon_code": "SHWAPNO10",
+        "description": "Get 10% off on grocery orders.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum order of BDT 500 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SHWAPNO50",
+        "description": "Save BDT 50 on orders above BDT 1000.",
+        "expiry_date": "2024-11-20",
+        "condition": "Minimum order of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.shwapno.com.bd",
+    "category": "Grocery",
+    "isSaleOn": false
+  },
+  {
+    "_id": "18g19h20i21j22k23l24",
+    "brand_name": "Rokomari",
+    "rating": 4.4,
+    "description": "Bangladesh’s largest online bookstore for a wide selection of books and educational materials.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKjlK0LUs6QyQoB2tRd7OLih_bLQbRHTdhw&s",
+    "coupons": [
+      {
+        "coupon_code": "ROKOMARI10",
+        "description": "10% off on your first book purchase.",
+        "expiry_date": "2024-12-10",
+        "condition": "For first-time customers.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "ROKOMARI50",
+        "description": "BDT 50 off on purchases above BDT 500.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.rokomari.com",
+    "category": "Books",
+    "isSaleOn": true
+  },
+  {
+    "_id": "19m20n21o22p23q24r25",
+    "brand_name": "Unilever Bangladesh",
+    "rating": 4.7,
+    "description": "Official online store for Unilever products, offering a range of personal care, health, and home care items.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTs7Pb0v-Pel1Ol47L9xcfHRmxYLwtOAXPg&s",
+    "coupons": [
+      {
+        "coupon_code": "UNILEVER10",
+        "description": "Get 10% off on personal care products.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "UNILEVER50",
+        "description": "Save BDT 50 on orders above BDT 500.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.unilever.com.bd",
+    "category": "Personal Care",
+    "isSaleOn": true
+  },
+  {
+    "_id": "21a22b23c24d25e26f",
+    "brand_name": "Jamuna Future Park",
+    "rating": 4.5,
+    "description": "The largest shopping mall in Bangladesh offering a wide range of retail stores, electronics, and entertainment.",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Jamuna_Future_Park_Logo.svg/1200px-Jamuna_Future_Park_Logo.svg.png",
+    "coupons": [
+      {
+        "coupon_code": "JFP10",
+        "description": "Get 10% off on all electronics.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "JFP200",
+        "description": "Save BDT 200 on fashion items over BDT 1500.",
+        "expiry_date": "2024-11-20",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.jamunafuturepark.com.bd",
+    "category": "Mall & Retail",
+    "isSaleOn": true
+  },
+  {
+    "_id": "22g23h24i25j26k27l",
+    "brand_name": "Shoppers World",
+    "rating": 4.2,
+    "description": "Online retail store for a diverse range of products, including clothing, electronics, and accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMht0xWHJ--kC4jv5wvnD4EPM-NJawPrKpg&s",
+    "coupons": [
+      {
+        "coupon_code": "SHOPWORLD5",
+        "description": "Get 5% off on all products.",
+        "expiry_date": "2024-12-05",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SHOPWORLD300",
+        "description": "Save BDT 300 on orders above BDT 3000.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.shoppersworld.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "23m24n25o26p27q28r",
+    "brand_name": "Banglalink Store",
+    "rating": 4.4,
+    "description": "Official online store for Banglalink, offering mobile plans, SIM cards, devices, and accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gu60Zpt7HQ4BteJ_fHarWK9vVIpkHfE42g&s",
+    "coupons": [
+      {
+        "coupon_code": "BLINK5",
+        "description": "Get BDT 5 off on your first recharge.",
+        "expiry_date": "2024-12-31",
+        "condition": "New customers only.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "BLINK50",
+        "description": "BDT 50 off on mobile recharge above BDT 200.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum recharge of BDT 200 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.banglalink.com.bd",
+    "category": "Telecom",
+    "isSaleOn": true
+  },
+  {
+    "_id": "24t25u26v27w28x29y",
+    "brand_name": "Star Cineplex",
+    "rating": 4.3,
+    "description": "Bangladesh’s leading cinema chain with a variety of movie-related merchandise and tickets available online.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlw3CtTueANyw98lu567gTQ7wfQ4z0l-RXJA&s",
+    "coupons": [
+      {
+        "coupon_code": "STAR50",
+        "description": "Get BDT 50 off on movie tickets.",
+        "expiry_date": "2024-12-01",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_code": "STARVIP",
+        "description": "Save BDT 200 on VIP tickets.",
+        "expiry_date": "2024-11-20",
+        "condition": "Applicable only for VIP tickets.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.starcineplex.com.bd",
+    "category": "Entertainment",
+    "isSaleOn": true
+  },
+  {
+    "_id": "25z26a27b28c29d30e",
+    "brand_name": "Bata Bangladesh",
+    "rating": 4.7,
+    "description": "Official online store for Bata, offering a wide range of shoes, sandals, and accessories.",
+    "brand_logo": "https://www.cdnlogo.com/logos/b/4/bata.svg",
+    "coupons": [
+      {
+        "coupon_code": "BATA10",
+        "description": "Get 10% off on all shoes.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BATA200",
+        "description": "Save BDT 200 on orders above BDT 1500.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum order of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.bata.com.bd",
+    "category": "Footwear",
+    "isSaleOn": false
+  },
+  {
+    "_id": "26f27g28h29i30j31k",
+    "brand_name": "Sylhet Online",
+    "rating": 4.1,
+    "description": "An online marketplace for Sylhet region’s local products, including groceries, fashion, and handmade goods.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbJktzDTQK3kqMjg1oNb_PTEAbBN8fEOFBrQ&s",
+    "coupons": [
+      {
+        "coupon_code": "SYLH10",
+        "description": "10% off on all local products.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SYLH500",
+        "description": "Save BDT 500 on orders above BDT 3000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum order of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.sylhetonline.com",
+    "category": "Regional E-commerce",
+    "isSaleOn": true
+  },
+  {
+    "_id": "27h28i29j30k31l32m",
+    "brand_name": "FurniShop",
+    "rating": 4.0,
+    "description": "Online store specializing in furniture and home decor items, with a focus on modern designs.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mmvcnrfSRPvYePH6rvKVYj-LSPqZjoP2Mw&s",
+    "coupons": [
+      {
+        "coupon_code": "FURNI10",
+        "description": "Get 10% off on home furniture.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FURNI300",
+        "description": "Save BDT 300 on orders above BDT 5000.",
+        "expiry_date": "2024-11-15",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.furnishop.com.bd",
+    "category": "Furniture & Home Decor",
+    "isSaleOn": false
+  },
+  {
+    "_id": "28n29o30p31q32r33s",
+    "brand_name": "Gadget World",
+    "rating": 4.6,
+    "description": "Bangladesh’s leading online store for electronic gadgets, smartphones, and accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazY4SgsLFujS5eDDjosAA-U2sDafG6-OOPg&s",
+    "coupons": [
+      {
+        "coupon_code": "GADGET5",
+        "description": "5% off on all gadgets.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GADGET200",
+        "description": "BDT 200 off on purchases over BDT 3000.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.gadgetworld.com.bd",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "29t30u31v32w33x34y",
+    "brand_name": "Ha-Meem Group",
+    "rating": 4.3,
+    "description": "A major apparel manufacturer and retailer in Bangladesh, offering online shopping for clothes and accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3L6MOdIV18AmFoHGByqx9Da8W0p4X0crXzw&s",
+    "coupons": [
+      {
+        "coupon_code": "HMGROUP10",
+        "description": "Get 10% off on clothing items.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "HMGROUP500",
+        "description": "Save BDT 500 on orders above BDT 3000.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.hameemgroup.com.bd",
+    "category": "Fashion",
+    "isSaleOn": false
+  },
+  {
+    "_id": "31a32b33c34d35e36f",
+    "brand_name": "GadgetPro BD",
+    "rating": 4.3,
+    "description": "An online store providing the latest electronics, gadgets, and mobile accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDZpem3FOIjVpZIQNmnNMhY8O3AGryZCLAw&s",
+    "coupons": [
+      {
+        "coupon_code": "GADGET10",
+        "description": "Get 10% off on all mobile accessories.",
+        "expiry_date": "2024-12-25",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GADGET300",
+        "description": "Save BDT 300 on orders above BDT 2000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 2000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.gadgetprobd.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "32g33h34i35j36k37l",
+    "brand_name": "StyleBazar",
+    "rating": 4.6,
+    "description": "An online fashion store offering trendy clothing, footwear, and accessories for men and women.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-EdlrQcHrMCGktu_FZTLlfOq8L9c84n3hg&s",
+    "coupons": [
+      {
+        "coupon_code": "STYLE15",
+        "description": "15% off on your first fashion order.",
+        "expiry_date": "2024-12-15",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "STYLE500",
+        "description": "Save BDT 500 on orders above BDT 3000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.stylebazar.com.bd",
+    "category": "Fashion",
+    "isSaleOn": false
+  },
+  {
+    "_id": "33m34n35o36p37q38r",
+    "brand_name": "TechWorld BD",
+    "rating": 4.7,
+    "description": "Your go-to online store for the latest tech gadgets, mobile phones, and accessories in Bangladesh.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR168a6-xP9_eyOoEXHxwUTflCNuALgJM0hnA&s",
+    "coupons": [
+      {
+        "coupon_code": "TECH5",
+        "description": "Get 5% off on all tech gadgets.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "TECH200",
+        "description": "Save BDT 200 on orders above BDT 3000.",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.techworldbd.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "34t35u36v37w38x39y",
+    "brand_name": "ChocoMia",
+    "rating": 4.2,
+    "description": "Premium online chocolate and sweet treats store offering a wide range of chocolates, cakes, and desserts.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUUy7cJtuSXiaS13zKhsqGfKqIdlZtyktgA&s",
+    "coupons": [
+      {
+        "coupon_code": "CHOCO10",
+        "description": "Get 10% off on all chocolates.",
+        "expiry_date": "2024-12-15",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "CHOCO300",
+        "description": "Save BDT 300 on orders above BDT 1500.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.chocomia.com.bd",
+    "category": "Food & Sweets",
+    "isSaleOn": false
+  },
+  {
+    "_id": "35z36a37b38c39d40e",
+    "brand_name": "HomeFix BD",
+    "rating": 4.1,
+    "description": "Online store for home improvement products, including furniture, appliances, and décor items.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuiNyDcZSQfZm9wwsZGhr9vpLwFPGalUE6_g&s",
+    "coupons": [
+      {
+        "coupon_code": "HOME10",
+        "description": "Get 10% off on all furniture items.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "HOME500",
+        "description": "Save BDT 500 on orders above BDT 5000.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.homefixbd.com",
+    "category": "Home & Living",
+    "isSaleOn": true
+  },
+  {
+    "_id": "36f37g38h39i40j41k",
+    "brand_name": "BookHut",
+    "rating": 4.3,
+    "description": "An online bookstore in Bangladesh offering a wide collection of books, from bestsellers to educational resources.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7J-til7IsTE32zpJ3bBpXI8pWXbheR3yMXQ&s",
+    "coupons": [
+      {
+        "coupon_code": "BOOK10",
+        "description": "Get 10% off on all books.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BOOK200",
+        "description": "Save BDT 200 on orders above BDT 1000.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.bookhut.com.bd",
+    "category": "Books",
+    "isSaleOn": false
+  },
+  {
+    "_id": "37m38n39o40p41q42r",
+    "brand_name": "BengaliSpices",
+    "rating": 4.2,
+    "description": "Online store offering a wide range of authentic Bengali spices and cooking ingredients.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNad5ayUJZdruZUAlwtsuU2BuzXfDkTzj4Kg&s",
+    "coupons": [
+      {
+        "coupon_code": "SPICE10",
+        "description": "10% off on all spice products.",
+        "expiry_date": "2024-12-25",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SPICE300",
+        "description": "Save BDT 300 on orders above BDT 1500.",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.bengalispices.com.bd",
+    "category": "Food & Spices",
+    "isSaleOn": true
+  },
+  {
+    "_id": "38t39u40v41w42x43y",
+    "brand_name": "Furniture Kingdom",
+    "rating": 4.4,
+    "description": "The best place to buy quality furniture online, offering products for living rooms, bedrooms, and offices.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxbe91znnhx89PfFr-a0u2l2IxB7pMoToFA&s",
+    "coupons": [
+      {
+        "coupon_code": "FURNI10",
+        "description": "10% off on all furniture items.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FURNI500",
+        "description": "Save BDT 500 on orders above BDT 5000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.furniturekingdom.com.bd",
+    "category": "Furniture",
+    "isSaleOn": true
+  },
+  {
+    "_id": "39f40g41h42i43j44k",
+    "brand_name": "MangoMart",
+    "rating": 4.5,
+    "description": "An online grocery store offering fresh vegetables, fruits, and daily essentials delivered at your doorstep.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUk3s5Buw4Rdc9MN5mVA7c1Hv3RsXdw6OFrw&s",
+    "coupons": [
+      {
+        "coupon_code": "MANGO10",
+        "description": "Get 10% off on your first order.",
+        "expiry_date": "2024-12-15",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MANGO300",
+        "description": "Save BDT 300 on orders above BDT 1500.",
+        "expiry_date": "2024-11-20",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.mangomart.com.bd",
+    "category": "Groceries",
+    "isSaleOn": true
+  },
+  {
+    "_id": "41a42b43c44d45e46f",
+    "brand_name": "LuxeLiving BD",
+    "rating": 4.6,
+    "description": "An online home décor store offering luxurious and stylish furniture, accessories, and décor items.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpC08V80H1dTwaFSbswcGtSDGDF4gs-HOHg&s",
+    "coupons": [
+      {
+        "coupon_code": "LUXE10",
+        "description": "Get 10% off on all home décor items.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "LUXE500",
+        "description": "Save BDT 500 on orders above BDT 4000.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 4000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.luxeliving.com.bd",
+    "category": "Home Decor",
+    "isSaleOn": true
+  },
+  {
+    "_id": "42g43h44i45j46k47l",
+    "brand_name": "SmartShop BD",
+    "rating": 4.4,
+    "description": "An e-commerce platform offering a wide variety of consumer electronics, gadgets, and mobile accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmy36tS4VQSCN5Zh_ILE7Y4jG3IKb6EIc24g&s",
+    "coupons": [
+      {
+        "coupon_code": "SMART5",
+        "description": "5% off on all gadgets.",
+        "expiry_date": "2024-12-20",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SMART300",
+        "description": "Save BDT 300 on orders above BDT 2500.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum purchase of BDT 2500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.smartshopbd.com",
+    "category": "Electronics",
+    "isSaleOn": false
+  },
+  {
+    "_id": "43m44n45o46p47q48r",
+    "brand_name": "Sundar Fashion",
+    "rating": 4.3,
+    "description": "A trendy online store for fashionable clothing and accessories for men and women.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvB-o49NYoNJJgHKNxct2LS8hLlsqZlPiB7Q&s",
+    "coupons": [
+      {
+        "coupon_code": "SUNDAR20",
+        "description": "20% off on all fashion items.",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SUNDAR500",
+        "description": "Save BDT 500 on orders above BDT 3000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.sundarfashion.com.bd",
+    "category": "Fashion",
+    "isSaleOn": true
+  },
+  {
+    "_id": "44t45u46v47w48x49y",
+    "brand_name": "BanglaMart",
+    "rating": 4.5,
+    "description": "Bangladesh’s largest online grocery store with fresh produce, daily essentials, and local products delivered to your doorstep.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTN6gUyauJlXOlYArw5nyUBoDnjR9PyKBK4A&s",
+    "coupons": [
+      {
+        "coupon_code": "BANGLA10",
+        "description": "10% off on all groceries.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BANGLA200",
+        "description": "Save BDT 200 on orders above BDT 1500.",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.banglamart.com.bd",
+    "category": "Groceries",
+    "isSaleOn": false
+  },
+  {
+    "_id": "45f46g47h48i49j50k",
+    "brand_name": "UrbanGrocery",
+    "rating": 4.2,
+    "description": "Your one-stop online grocery store for fresh, local, and organic foods delivered directly to your door.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvgWYTPy8jUUrWuvrDLfDjGauWN8qUkvX1w&s",
+    "coupons": [
+      {
+        "coupon_code": "URBAN10",
+        "description": "10% off on your first grocery order.",
+        "expiry_date": "2024-12-20",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "URBAN500",
+        "description": "Save BDT 500 on orders above BDT 5000.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.urbangrocery.com.bd",
+    "category": "Groceries",
+    "isSaleOn": true
+  },
+  {
+    "_id": "46a47b48c49d50e51f",
+    "brand_name": "BengalOnline",
+    "rating": 4.4,
+    "description": "E-commerce platform providing a diverse range of products from electronics to fashion and everything in between.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRchPxHnbxsWKzIjyyRJ9TnEqIzhHubeOaPQ&s",
+    "coupons": [
+      {
+        "coupon_code": "BENGAL5",
+        "description": "Get 5% off on electronics.",
+        "expiry_date": "2024-12-15",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BENGAL100",
+        "description": "Save BDT 100 on orders above BDT 1000.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.bengalonline.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "47m48n49o50p51q52r",
+    "brand_name": "ClickBD",
+    "rating": 4.6,
+    "description": "Bangladesh’s fastest-growing online marketplace, offering everything from electronics to fashion and groceries.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ROK3_A3mfnFxmDPAm9A3Rq3tCrxb0Ag3xA&s",
+    "coupons": [
+      {
+        "coupon_code": "CLICK10",
+        "description": "10% off on all orders above BDT 2000.",
+        "expiry_date": "2024-12-30",
+        "condition": "Minimum purchase of BDT 2000 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "CLICK300",
+        "description": "Save BDT 300 on orders above BDT 3000.",
+        "expiry_date": "2024-12-10",
+        "condition": "Minimum purchase of BDT 3000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.clickbd.com",
+    "category": "Marketplace",
+    "isSaleOn": true
+  },
+  {
+    "_id": "48t49u50v51w52x53y",
+    "brand_name": "GroceryBazaar",
+    "rating": 4.3,
+    "description": "A trusted online grocery store providing fresh produce, frozen foods, snacks, and everyday essentials.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPPa3R4dwV93K-HxwudKlJz54i5a_LgDz5A&s",
+    "coupons": [
+      {
+        "coupon_code": "GROCERY10",
+        "description": "Get 10% off on all groceries.",
+        "expiry_date": "2024-12-05",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GROCERY500",
+        "description": "Save BDT 500 on orders above BDT 5000.",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.grocerybazaar.com.bd",
+    "category": "Groceries",
+    "isSaleOn": true
+  },
+  {
+    "_id": "49f50g51h52i53j54k",
+    "brand_name": "FreshMart BD",
+    "rating": 4.5,
+    "description": "FreshMart offers organic produce, fresh groceries, and other essentials delivered to your doorsteps.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFW9FKXwMPmORIDo-EPRa_6gL7rGkw0JdRg&s",
+    "coupons": [
+      {
+        "coupon_code": "FRESH10",
+        "description": "10% off on your first grocery purchase.",
+        "expiry_date": "2024-12-01",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FRESH200",
+        "description": "Save BDT 200 on orders above BDT 1000.",
+        "expiry_date": "2024-11-25",
+        "condition": "Minimum purchase of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.freshmartbd.com",
+    "category": "Groceries",
+    "isSaleOn": false
+  },
+  {
+    "_id": "50a51b52c53d54e55f",
+    "brand_name": "ShopEase BD",
+    "rating": 4.4,
+    "description": "A user-friendly e-commerce platform offering a variety of products ranging from electronics to fashion.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcb3WB3xVe8yHufChbKxcptUMe1qnOqL1zQ&s",
+    "coupons": [
+      {
+        "coupon_code": "EASE10",
+        "description": "10% off on all orders above BDT 1500.",
+        "expiry_date": "2024-12-25",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "EASE500",
+        "description": "Save BDT 500 on orders above BDT 5000.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of BDT 5000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.shopease.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": false
+  },
+  {
+    "_id": "51g52h53i54j55k56l",
+    "brand_name": "TheGadgetHub",
+    "rating": 4.7,
+    "description": "A Bangladeshi online store specializing in the latest gadgets, smartphones, and tech accessories.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf_FRQyIofAhE_A9zlSfv7PpnEtXMmDmWTvw&s",
+    "coupons": [
+      {
+        "coupon_code": "GADGET10",
+        "description": "Get 10% off on all gadgets and accessories.",
+        "expiry_date": "2024-12-30",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "GADGET300",
+        "description": "Save BDT 300 on orders above BDT 2500.",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of BDT 2500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.thegadgethub.com.bd",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "52m53n54o55p56q57r",
+    "brand_name": "MediMart BD",
+    "rating": 4.3,
+    "description": "An online pharmacy offering medicines, health products, and wellness items with home delivery.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfNgBdFS9bqq5GnmxCBt0WLaryjDUuirKoA&s",
+    "coupons": [
+      {
+        "coupon_code": "MEDI10",
+        "description": "10% off on all health products.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MEDI200",
+        "description": "Save BDT 200 on orders above BDT 1000.",
+        "expiry_date": "2024-12-10",
+        "condition": "Minimum purchase of BDT 1000 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.medimart.com.bd",
+    "category": "Health & Wellness",
+    "isSaleOn": false
+  },
+  {
+    "_id": "53t54u55v56w57x58y",
+    "brand_name": "PetWorld BD",
+    "rating": 4.6,
+    "description": "An online store dedicated to pet products, including food, toys, accessories, and grooming services.",
+    "brand_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqoq5pUk07iSigA_GIyEPV68aJsx4VPmOgQ&s",
+    "coupons": [
+      {
+        "coupon_code": "PET10",
+        "description": "10% off on your first pet product purchase.",
+        "expiry_date": "2024-12-20",
+        "condition": "First-time customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "PET300",
+        "description": "Save BDT 300 on orders above BDT 1500.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of BDT 1500 required.",
+        "coupon_type": "Flat Discount"
+      }
+    ],
+    "shop_link": "https://www.petworldbd.com",
+    "category": "Pet Supplies",
+    "isSaleOn": true
+  }
+]
