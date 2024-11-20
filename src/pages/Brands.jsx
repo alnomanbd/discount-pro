@@ -49,13 +49,14 @@ const BrandsPage = () => {
 
   // Handle the search functionality (filter brands by name)
   const handleSearchChange = (e) => {
+    console.log(e.target.value)
     setSearchTerm(e.target.value); // Update search term state on user input
   };
 
   // Filter brands based on search term (on each render)
   const filteredBrands = searchTerm
     ? brands.filter((brand) =>
-        brand.name && brand.name.toLowerCase().includes(searchTerm.toLowerCase()) // Ensure `name` is defined before calling `toLowerCase`
+        brand.brand_name && brand.brand_name.toLowerCase().includes(searchTerm.toLowerCase()) // Ensure `name` is defined before calling `toLowerCase`
       )
     : brands; // If no search term, show all brands
 
