@@ -89,7 +89,7 @@ const CouponPage = () => {
 
               {/* Use Now Button */}
               <Link
-                to={coupon.brand_link}
+                to={brand.shop_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal-500 flex items-center text-white py-2 px-6 rounded-lg shadow-md hover:bg-teal-600 transition duration-300 transform hover:scale-105"

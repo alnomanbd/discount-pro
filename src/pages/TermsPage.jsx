@@ -29,7 +29,7 @@ const TermsPage = () => {
 
           <h3 className="text-xl font-semibold text-gray-800 mb-4">4. Privacy Policy</h3>
           <p className="text-gray-700 mb-4">
-            Your privacy is important to us. Please review our <Link to="/privacy-policy" className="text-blue-600 hover:text-blue-800">Privacy Policy</Link> to understand how we collect, use, and protect your personal information.
+            Your privacy is important to us. Please review our <Link to="/auth/privacy-policy" className="text-blue-600 hover:text-blue-800">Privacy Policy</Link> to understand how we collect, use, and protect your personal information.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mb-4">5. Intellectual Property</h3>

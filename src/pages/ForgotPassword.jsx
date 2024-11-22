@@ -1,8 +1,12 @@
-// src/components/ForgotPasswordPage.js
-import React, { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../context/authContext';
+import { toast } from 'react-toastify';
+import { fetchSignInMethodsForEmail } from 'firebase/auth';
+import { auth } from '../services/firebase.config';
 
 const ForgotPasswordPage = () => {
+  const { userPasswordReset } = useContext(AuthContext);
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
@@ -11,24 +15,60 @@ const ForgotPasswordPage = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate a password reset request (Replace this with your Firebase password reset logic)
+    console.log(email)
+
+    if (!email) {
+      setMessage('Please enter a valid email address.');
+      setLoading(false);
+      toast.error('Please enter a valid email address.');
+      return;
+    }
+
     try {
-      // Simulate async operation
-      setTimeout(() => {
+      console.log('Checking if email is registered:', email); // Debugging log
+
+      // Check if the email is registered in Firebase Authentication
+      const methods = await fetchSignInMethodsForEmail(auth, email); // Use the auth instance from firebase.config.js
+
+      console.log('Sign-in methods:', methods); // Log the methods array to see what is returned
+
+      if (methods.length === 0) {
+        // If no sign-in methods are found, the email is not registered
+        setMessage('This email is not registered.');
+        toast.error('This email is not registered.');
         setLoading(false);
-        setMessage('Password reset link sent to your email!');
-      }, 2000);
+        return;
+      }
 
-      // You can replace this with Firebase functionality:
-      // firebase.auth().sendPasswordResetEmail(email).then(() => {
-      //   setMessage('Password reset link sent to your email!');
-      // }).catch((error) => {
-      //   setMessage(error.message);
-      // });
+      // If email is registered, proceed to send password reset link
+      userPasswordReset(email)
+        .then(() => {
+          setMessage('Password reset link sent to your email!');
+          toast.success('Password reset link sent to your email!');
+          setEmail('');
+          setLoading(false);
+        })
+        .catch((error) => {
+          setLoading(false);
+          const errorCode = error.code;
+          const errorMessage = error.message;
 
+          // Handle specific Firebase errors
+          if (errorCode === 'auth/user-not-found') {
+            setMessage('This email is not registered.');
+            toast.error('This email is not registered.');
+          } else if (errorCode === 'auth/invalid-email') {
+            setMessage('The email address is not valid.');
+            toast.error('The email address is not valid.');
+          } else {
+            setMessage(errorMessage);
+            toast.error(errorMessage || 'Error sending password reset link. Please try again.');
+          }
+        });
     } catch (error) {
       setLoading(false);
-      setMessage('Error sending password reset link. Please try again.');
+      setMessage('Error checking email. Please try again.');
+      toast.error('Error checking email. Please try again.');
     }
   };
 

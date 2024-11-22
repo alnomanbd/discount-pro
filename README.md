@@ -22,6 +22,8 @@ https://discount-pro-eight.vercel.app/
 => npm install react-responsive-carousel
 => npm install react-fast-marquee
 => npm install firebase
+=> npm install use-debounce
+=> npm install crypto-js
 
 
 

@@ -1,20 +1,59 @@
-// src/components/LoginPage.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { IoLogoGoogle } from 'react-icons/io';
 import { FaFacebook, FaGithub, FaTwitter, FaLinkedin, FaEye, FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/authContext';
+import { toast } from 'react-toastify';
+import CryptoJS from 'crypto-js';
 
 const LoginPage = () => {
+  const { setUser, userLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [message, setMessage] = useState('');
+
+  // Secret key for encryption and decryption (ensure this is stored securely)
+  const secretKey = "your-secret-key";  // Should be placed in environment variables or a secure store
+
+  // Encrypt data before storing it in localStorage
+  const encryptData = (data) => {
+    return CryptoJS.AES.encrypt(JSON.stringify(data), secretKey).toString();
+  };
+
+  // Decrypt data from localStorage
+  const decryptData = (encryptedData) => {
+    try {
+      const bytes = CryptoJS.AES.decrypt(encryptedData, secretKey);
+      const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
+      return decryptedData ? JSON.parse(decryptedData) : null;  // Safely parse if data exists
+    } catch (error) {
+      console.error("Error decrypting data:", error);  // Log any decryption errors
+      return null;  // Return null if decryption fails
+    }
+  };
+
+  // Save encrypted data to localStorage
+  const saveToLocalStorage = (key, data) => {
+    const encryptedData = encryptData(data);
+    localStorage.setItem(key, encryptedData);
+  };
+
+  // Get decrypted data from localStorage
+  const getFromLocalStorage = (key) => {
+    const encryptedData = localStorage.getItem(key);
+    if (encryptedData) {
+      return decryptData(encryptedData);  // Decrypt and return the data
+    }
+    return null;
+  };
 
   // Check localStorage for saved credentials when the component mounts
   useEffect(() => {
-    const savedEmail = localStorage.getItem('email');
-    const savedPassword = localStorage.getItem('password');
+    const savedEmail = getFromLocalStorage('email');
+    const savedPassword = getFromLocalStorage('password');
     const savedRememberMe = localStorage.getItem('rememberMe') === 'true';
 
     if (savedRememberMe && savedEmail && savedPassword) {
@@ -26,23 +65,24 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Example validation
-    if (email === 'user@example.com' && password === 'password123') {
-      setMessage('Login successful!');
 
-      // Save credentials to localStorage if "Remember Me" is checked
-      if (rememberMe) {
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-        localStorage.setItem('rememberMe', 'true');
-      } else {
-        localStorage.removeItem('email');
-        localStorage.removeItem('password');
-        localStorage.removeItem('rememberMe');
-      }
-    } else {
-      setMessage('Invalid email or password.');
-    }
+    userLogin(email, password)
+      .then(result => {
+        setUser(result.user);
+
+        // Save to localStorage only if "remember me" is checked
+        if (rememberMe) {
+          saveToLocalStorage('email', email);
+          saveToLocalStorage('password', password);
+          localStorage.setItem('rememberMe', 'true');
+        } else {
+          localStorage.removeItem('email');
+          localStorage.removeItem('password');
+          localStorage.removeItem('rememberMe');
+        }
+
+        navigate('/');
+      }).catch(() => toast.error("Email and Password do not match!"));
   };
 
   const togglePasswordVisibility = () => {
@@ -146,13 +186,6 @@ const LoginPage = () => {
             <Link to="/auth/signup" className="text-blue-600 hover:text-blue-800"> Sign up</Link>
           </p>
         </div>
-
-        {/* Error/Success Message */}
-        {message && (
-          <div className={`text-sm ${message.includes('Invalid') ? 'text-red-600' : 'text-green-600'} mb-4`}>
-            {message}
-          </div>
-        )}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const MainLayout = () => {
         <header className="w-11/12 mx-auto py-10">
           <Header />
         </header>
-        <main className="w-11/12 mx-auto bg-slate-100 rounded-lg">
+        <main className="w-11/12 mx-auto bg-slate-100 rounded-lg mb-4">
           <Outlet />
         </main>
         <footer className="w-full mx-auto">

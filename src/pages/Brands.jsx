@@ -7,6 +7,17 @@ const BrandsPage = () => {
   const [loading, setLoading] = useState(true); // Track the loading state
   const [error, setError] = useState(null); // Track errors during fetch
   const [searchTerm, setSearchTerm] = useState(''); // For search functionality
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(searchTerm); // Debounced search term
+
+  // Set up debounce effect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm); // Update debounced search term
+    }, 300); // Debounce delay set to 300ms
+
+    // Cleanup timeout on component unmount or when searchTerm changes
+    return () => clearTimeout(timer);
+  }, [searchTerm]); // This effect runs when the searchTerm changes
 
   // Fetch brand data when the component is mounted
   useEffect(() => {
@@ -49,14 +60,13 @@ const BrandsPage = () => {
 
   // Handle the search functionality (filter brands by name)
   const handleSearchChange = (e) => {
-    console.log(e.target.value)
     setSearchTerm(e.target.value); // Update search term state on user input
   };
 
-  // Filter brands based on search term (on each render)
-  const filteredBrands = searchTerm
+  // Filter brands based on debounced search term (this is now debounced)
+  const filteredBrands = debouncedSearchTerm
     ? brands.filter((brand) =>
-        brand.brand_name && brand.brand_name.toLowerCase().includes(searchTerm.toLowerCase()) // Ensure `name` is defined before calling `toLowerCase`
+        brand.brand_name && brand.brand_name.toLowerCase().includes(debouncedSearchTerm.toLowerCase()) // Ensure `name` is defined before calling `toLowerCase`
       )
     : brands; // If no search term, show all brands
 

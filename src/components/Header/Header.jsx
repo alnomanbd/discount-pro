@@ -1,21 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaHome, FaTags, FaUserCircle, FaSignOutAlt, FaUserPlus } from 'react-icons/fa'; // React Icons
-import { IoMdPerson } from 'react-icons/io'; // More icons (optional)
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  FaHome,
+  FaTags,
+  FaUserCircle,
+  FaSignOutAlt,
+  FaUserPlus,
+} from "react-icons/fa"; // React Icons
+import { IoMdPerson } from "react-icons/io"; // More icons (optional)
+import { AuthContext } from "../../context/authContext";
+import { toast } from "react-toastify";
 
 const Header = () => {
+  const { user, setUser, userLogOut } = useContext(AuthContext);
+  console.log(user);
   // Simulate user authentication state
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Update based on actual auth state
-  const [user, setUser] = useState({
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    image: 'https://via.placeholder.com/150', // Placeholder image
-  });
+  // const [isLoggedIn, setIsLoggedIn] = useState(false); // Update based on actual auth state
+  // const [user, setUser] = useState({
+  //   name: 'John Doe',
+  //   email: 'john.doe@example.com',
+  //   image: 'https://via.placeholder.com/150', // Placeholder image
+  // });
 
-  // Handle user logout
+  // // Handle user logout
   const handleLogout = () => {
-    setIsLoggedIn(false);
+    // setIsLoggedIn(false);
     setUser(null); // Clear user data on logout
+    userLogOut()
+    toast.success("Loged out successfully!")
   };
 
   return (
@@ -23,7 +35,9 @@ const Header = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-white">DiscountPro</Link>
+          <Link to="/" className="text-2xl font-bold text-white">
+            DiscountPro
+          </Link>
         </div>
 
         {/* Navigation Section */}
@@ -36,13 +50,17 @@ const Header = () => {
             <FaTags />
             <span>Brands</span>
           </Link>
-          {isLoggedIn && (
-            <Link to="/my-profile" className="flex items-center space-x-2 text-white">
-              <IoMdPerson />
-              <span>My Profile</span>
-            </Link>
-          )}
-          <Link to="/about-us" className="flex items-center space-x-2 text-white">
+          {user && <Link
+            to="/my-profile"
+            className="flex items-center space-x-2 text-white"
+          >
+            <IoMdPerson />
+            <span>My Profile</span>
+          </Link>}
+          <Link
+            to="/about-us"
+            className="flex items-center space-x-2 text-white"
+          >
             <FaUserCircle />
             <span>About Us</span>
           </Link>
@@ -50,8 +68,7 @@ const Header = () => {
 
         {/* Authentication Section */}
         <div className="flex items-center space-x-4">
-          {!isLoggedIn ? (
-            // Show login/registration buttons if not logged in
+          {!user ? (
             <>
               <Link
                 to="/auth/login"
@@ -67,24 +84,25 @@ const Header = () => {
               </Link>
             </>
           ) : (
-            // Show user profile info and logout button if logged in
             <div className="flex items-center space-x-4">
               <img
-                src={user.image}
-                alt={user.name}
-                className="w-10 h-10 rounded-full border-2 border-white"
-              />
+              src={user.photoURL}
+              alt={user.email}
+              className="w-10 h-10 rounded-full border-2 border-white"
+            />
               <div className="text-sm text-white">
-                <div>{user.name}</div>
-                <div>{user.email}</div>
+                {user?.displayName}
+                {/* <div>{user.email}</div> */}
               </div>
-              <button
-                onClick={handleLogout}
-                className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition duration-200"
-              >
-                <FaSignOutAlt />
-                Logout
-              </button>
+              <div>
+                <button
+                  onClick={handleLogout}
+                  className="bg-white text-indigo-800 px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-indigo-600 hover:text-white transition duration-200 ease-in-out"
+                >
+                  <FaSignOutAlt className="mr-2" />
+                  <span>Logout</span>
+                </button>
+              </div>
             </div>
           )}
         </div>

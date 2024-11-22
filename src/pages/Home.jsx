@@ -3,23 +3,53 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee"; // For the fast marquee scroll
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import HomeSlider from "../components/Slider/HomeSlider";
+import AOS from "aos"; // Import AOS library
+import "aos/dist/aos.css"; // Import AOS styles
+import ScrollToTop from "react-scroll-to-top";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
+import ScrollToTopButton from "../components/Scroll/ScrollToTop";
+import ScrollTopBarPercentage from "../components/Scroll/ScrollTopWithPercentage";
 
 // Assuming this data is passed via props or imported from a data file
 const Home = () => {
   const [brands, setBrands] = useState([]);
   const [brandsOnSale, setBrandsOnSale] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulating fetching brand data from the public folder (coupon.data.json)
+    // Initialize AOS animation
+    AOS.init({
+      duration: 1000, // You can adjust the duration of the animations
+      once: true, // To make the animation happen only once
+    });
+
     const fetchBrandData = async () => {
-      const response = await fetch("/coupon.data.json");
-      const data = await response.json();
-      setBrands(data);
-      setBrandsOnSale(data.filter((brand) => brand.isSaleOn)); // Filter brands that are on sale
+      try {
+        const response = await fetch("/coupon.data.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch brand data");
+        }
+        const data = await response.json();
+        setBrands(data);
+        setBrandsOnSale(data.filter((brand) => brand.isSaleOn)); // Filter brands that are on sale
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
     };
 
     fetchBrandData();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>; // Loading state can be enhanced with a spinner or placeholder
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>; // Error state
+  }
 
   return (
     <div>
@@ -27,9 +57,7 @@ const Home = () => {
       <HomeSlider />
 
       <div className="my-8 px-6 py-6 bg-slate-200">
-        <h2 className="text-3xl font-semibold mb-4">
-          Top Brands
-        </h2>
+        <h2 className="text-3xl font-semibold mb-4">Top Brands</h2>
 
         <div className="w-full overflow-hidden">
           <Marquee
@@ -37,7 +65,7 @@ const Home = () => {
             gradient={false}
             pauseOnHover={true}
             className="w-full"
-            style={{ overflowX: "hidden", whiteSpace: "nowrap" }} // Ensure no horizontal overflow
+            style={{ overflowX: "hidden", whiteSpace: "nowrap" }}
           >
             <div className="flex items-center space-x-6">
               {brands.map((brand) => (
@@ -67,6 +95,8 @@ const Home = () => {
             <div
               key={brand._id}
               className="max-w-sm bg-white rounded-2xl shadow-lg p-4"
+              data-aos="fade-up" // Apply fade-up animation on scroll
+              data-aos-delay="200" // Optional delay to stagger the animations
             >
               <img
                 src={brand.brand_logo}
@@ -88,6 +118,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+      {/* <ScrollToTopButton/> */}
+      <ScrollTopBarPercentage/>
     </div>
   );
 };

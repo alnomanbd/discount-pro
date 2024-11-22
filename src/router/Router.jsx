@@ -4,7 +4,7 @@ import React, { Suspense } from 'react';
 // Lazy-loaded components
 const Home = React.lazy(() => import("../pages/Home"));
 const Brands = React.lazy(() => import("../pages/Brands"));
-const CouponPage = React.lazy(() => import("../pages/CouponPage")); // Import coupon page component
+const CouponPage = React.lazy(() => import("../pages/CouponPage"));
 const NotFound = React.lazy(() => import("../pages/NotFound"));
 const LoadingSpinner = React.lazy(() => import("../components/Spinner/LoadingSpinner"));
 
@@ -14,6 +14,11 @@ import LoginPage from '../pages/Login';
 import SignupPage from '../pages/SignUp';
 import ForgotPasswordPage from '../pages/ForgotPassword';
 import AboutUsPage from '../pages/AboutUs';
+import TermsPage from '../pages/TermsPage';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import ProfilePage from '../pages/ProfilePage';
+import PrivateRoute from './PrivateRoute';
+import Test from '../pages/Test';
 
 // Router setup
 export const router = createBrowserRouter([
@@ -38,18 +43,29 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        // Dynamic route for brand details
-        path: "/brands/:id", // Dynamic route for each brand
+        path: "/brands/:id",
         element: (
           <Suspense fallback={<LoadingSpinner />}>
-            <CouponPage /> {/* This component will display coupons and brand details */}
+            <CouponPage />
           </Suspense>
         ),
       },
       {
         path: "/about-us",
-        element: <AboutUsPage/>
-      }
+        element: <AboutUsPage />
+      },
+      {
+        path: "/my-profile",
+        element: (
+          <PrivateRoute>
+            <ProfilePage />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/test",
+        element: <Test />
+      },
     ],
   },
   {
@@ -65,27 +81,33 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        // Dynamic route for brand details
-        path: "/auth/signup", // Dynamic route for each brand
+        path: "/auth/signup",
         element: (
           <Suspense fallback={<LoadingSpinner />}>
-            <SignupPage /> {/* This component will display coupons and brand details */}
+            <SignupPage />
           </Suspense>
         ),
       },
       {
-        // Dynamic route for brand details
-        path: "/auth/forgot-password", // Dynamic route for each brand
+        path: "/auth/forgot-password",
         element: (
           <Suspense fallback={<LoadingSpinner />}>
-            <ForgotPasswordPage /> {/* This component will display coupons and brand details */}
+            <ForgotPasswordPage />
           </Suspense>
         ),
       },
+      {
+        path: "/auth/terms",
+        element: <TermsPage />
+      },
+      {
+        path: "/auth/privacy-policy",
+        element: <PrivacyPolicy />
+      }
     ],
   },
   {
-    path: "*", // Catch-all route for 404
+    path: "*", 
     element: (
       <Suspense fallback={<LoadingSpinner />}>
         <NotFound />
